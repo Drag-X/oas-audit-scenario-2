@@ -53,14 +53,6 @@ components:
       type: http
       scheme: bearer
       bearerFormat: JWT
-    clientid:
-      type: apiKey
-      in: header
-      name: client_id
-    clientsecret:
-      type: apiKey
-      in: header
-      name: client_secret
   schemas:
     Pet:
       type: object
