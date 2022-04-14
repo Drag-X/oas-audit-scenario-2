@@ -60,4 +60,5 @@ jobs:
           
       - name: OAS3 & Swagger2 Lint Action
         uses: ahmetgeymen/spectral-lint-action@v1.0
-
+        with:
+          file_path: style.yml
