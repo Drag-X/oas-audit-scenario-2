@@ -61,7 +61,7 @@ jobs:
       - name: Spectral Linting
         uses: stoplightio/spectral-action@v0.8.1
         with:
-          file_glob: 'oas-audit-scenario-2.yaml'
-          spectral_ruleset: '.spectral.yml'
+          file_glob: oas-audit-scenario-2.yaml
+          spectral_ruleset: .spectral.yml
 
 
