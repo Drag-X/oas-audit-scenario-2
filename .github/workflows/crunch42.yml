@@ -60,8 +60,5 @@ jobs:
           
       - name: Spectral Linting
         uses: stoplightio/spectral-action@v0.8.1
-        with:
-          file_glob: '*.yaml'
-          spectral_ruleset: .spectral.yml
 
 
