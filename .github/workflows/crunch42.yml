@@ -59,6 +59,7 @@ jobs:
           github-token: ${{ github.token }}
           
       - name: Test this action against an incorrect file.
+        uses: ./
         id: expect-failure
         with:
           file_glob: .*.yaml
