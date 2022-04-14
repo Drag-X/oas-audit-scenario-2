@@ -9,9 +9,6 @@ on:
   schedule:
     - cron: '45 2 * * 5'
 
-permissions:
-  contents: read
-
 jobs:
   rest-api-static-security-testing:
     permissions:
