@@ -62,8 +62,8 @@ jobs:
         id: expect-failure
         uses: ./
         with:
-          file_glob: .*.yml
-          spectral_ruleset: .my-custom.spectral.yml
+          file_glob: .*.yaml
+          spectral_ruleset: style.yaml
         continue-on-error: true
 
       - if: steps.expect-failure.output.status == 'failure'
