@@ -10,7 +10,7 @@ rules:
         schema:
           items:
             type: object
-          minItems: 1
+          minItems: 2
           type: array
 
   oas3-api-costcenter:
