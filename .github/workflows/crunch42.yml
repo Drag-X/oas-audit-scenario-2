@@ -58,14 +58,7 @@ jobs:
           # Github token for uploading the results
           github-token: ${{ github.token }}
           
-      - name: Test this action against an incorrect file.
-        uses: ./
-        id: expect-failure
-        with:
-          file_glob: .*.yaml
-          spectral_ruleset: action.yaml
-        continue-on-error: true
+      - name: Spectral Linting
+        uses: stoplightio/spectral-action@v0.8.1
 
-      - if: steps.expect-failure.output.status == 'failure'
-        run: exit 0
 
