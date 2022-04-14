@@ -57,3 +57,7 @@ jobs:
           upload-to-code-scanning: true
           # Github token for uploading the results
           github-token: ${{ github.token }}
+          
+      - name: OAS3 & Swagger2 Lint Action
+        uses: ahmetgeymen/spectral-lint-action@v1.0
+
