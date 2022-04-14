@@ -60,7 +60,6 @@ jobs:
           
       - name: Test this action against an incorrect file.
         id: expect-failure
-        uses: ./
         with:
           file_glob: .*.yaml
           spectral_ruleset: action.yaml
