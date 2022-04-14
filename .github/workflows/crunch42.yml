@@ -63,7 +63,7 @@ jobs:
         uses: ./
         with:
           file_glob: .*.yaml
-          spectral_ruleset: style.yaml
+          spectral_ruleset: action.yaml
         continue-on-error: true
 
       - if: steps.expect-failure.output.status == 'failure'
