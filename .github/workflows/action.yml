@@ -40,8 +40,8 @@ jobs:
         run: |
             npm install -g @stoplight/spectral-cli
       - name: Run Rules
-        working-directory: oas-audit-scenario-2
         run: |
+            cd..
             spectral lint oas-audit-scenario-2.yaml --ruleset .spectral.yml
       
              
