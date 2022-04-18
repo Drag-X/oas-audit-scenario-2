@@ -39,7 +39,7 @@ jobs:
       - name: Group of log lines
         run: |
             npm install -g @stoplight/spectral-cli
-            spectral lint oas-audit-scenario-2.yaml --ruleset .spectral.yml
+            spectral lint oas-audit-scenario-2.yaml --ruleset spectralrules.yml
       
              
           
