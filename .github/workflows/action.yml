@@ -36,9 +36,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Check out the repository
-      - name: Run Custom Spectral Ruleset
+      - name: Install Spectral
         run: |
             npm install -g @stoplight/spectral-cli
+      - name: Run Rules
+        run: |
             spectral lint oas-audit-scenario-2.yaml --ruleset .spectral.yml
       
              
