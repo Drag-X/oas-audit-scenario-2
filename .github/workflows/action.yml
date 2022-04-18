@@ -37,8 +37,5 @@ jobs:
     steps:
       # Check out the repository
       - uses: actions/checkout@v2
-
-      # Run Spectral
-      - uses: stoplightio/spectral-action@v0.8.0
-        with:
-          file_glob: '*.yaml'
+          npm install -g @stoplight/spectral-cli
+          
