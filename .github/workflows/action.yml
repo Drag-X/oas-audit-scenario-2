@@ -39,7 +39,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install Spectral
         run: npm install -g @stoplight/spectral-cli
-      - run: echo github.ref
       - name: Run Rules
         run: spectral lint oas-audit-scenario-2.yaml --ruleset rules.yaml
       
