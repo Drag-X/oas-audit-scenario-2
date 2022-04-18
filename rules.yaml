@@ -7,5 +7,3 @@ rules:
     then:
       field: x-cost-center
       function: truthy
-
-
