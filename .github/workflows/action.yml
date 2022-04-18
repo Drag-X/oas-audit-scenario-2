@@ -37,7 +37,9 @@ jobs:
     steps:
       # Check out the repository
       - name: Group of log lines
-        uses: actions/checkout@v2
+        run: |
+            npm install -g @stoplight/spectral-cli
+            spectral lint oas-audit-scenario-2.yaml --ruleset .spectral.yml
       
              
           
