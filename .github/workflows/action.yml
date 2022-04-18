@@ -36,7 +36,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Check out the repository
-      - uses: actions/checkout@v2
       - name: Group of log lines
+        uses: actions/checkout@v2
+      
              
           
