@@ -37,8 +37,7 @@ jobs:
     steps:
       # Check out the repository
       - uses: actions/checkout@v2
-        with:
-            installSpectral: npm install -g @stoplight/spectral-cli
-            runSpectral: spectral lint oas-audit-scenario-2.yaml --ruleset .spectral.yml
+          npm install -g @stoplight/spectral-cli
+          spectral lint oas-audit-scenario-2.yaml --ruleset .spectral.yml
              
           
