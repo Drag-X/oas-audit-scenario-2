@@ -37,5 +37,7 @@ jobs:
     steps:
       # Check out the repository
       - uses: actions/checkout@v2
-          npm install -g @stoplight/spectral-cli
+        with:
+            inlineScript: npm install -g @stoplight/spectral-cli
+             
           
