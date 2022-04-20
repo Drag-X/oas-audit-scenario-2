@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   version: 1.0.0
-  title: oas-audit-scenario-1
+  title: oas-audit-scenario-1-new
   license:
     name: MIT
 servers:
