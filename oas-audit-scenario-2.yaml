@@ -6,8 +6,6 @@ info:
     name: MIT
 servers:
   - url: https://petstore.swagger.io/v1
-x-cost-center: "21211221"
-x-business-id: "2343434"
 paths:
   /pets:
     get:
