@@ -28,10 +28,6 @@ jobs:
           upload-to-code-scanning: true
           # Github token for uploading the results
           github-token: ${{ github.token }}
-      - name: Run Spectral
-
-      # Check out the repository
-      - uses: actions/checkout@v2
       - name: Install Spectral
         run: npm install -g @stoplight/spectral-cli
       - name: Run Rules 2
