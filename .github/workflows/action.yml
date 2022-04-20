@@ -28,9 +28,10 @@ jobs:
           upload-to-code-scanning: true
           # Github token for uploading the results
           github-token: ${{ github.token }}
+      
       - name: Install Spectral
         run: npm install -g @stoplight/spectral-cli
-      - name: Run Rules 2
+      - name: Run Custom Spectral Rules
         run: spectral lint oas-audit-scenario-2.yaml --ruleset rules.yaml
     
       
