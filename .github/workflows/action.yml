@@ -6,8 +6,6 @@ on:
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ main ]
-  schedule:
-    - cron: '45 2 * * 5'
 
 jobs:
   rest-api-static-security-testing:
@@ -30,17 +28,15 @@ jobs:
           upload-to-code-scanning: true
           # Github token for uploading the results
           github-token: ${{ github.token }}
+      - name: Run Spectral
 
-  build:
-    name: Run Spectral
-    runs-on: ubuntu-latest
-    steps:
       # Check out the repository
       - uses: actions/checkout@v2
       - name: Install Spectral
         run: npm install -g @stoplight/spectral-cli
       - name: Run Rules 2
         run: spectral lint oas-audit-scenario-2.yaml --ruleset rules.yaml
+    
       
              
           
